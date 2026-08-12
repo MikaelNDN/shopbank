@@ -1,0 +1,119 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* ShopBank design tokens aligned with the mobile app. All colors HSL. */
+
+@layer base {
+  :root {
+    --background: 0 0% 100%;
+    --foreground: 221 39% 11%;
+
+    --card: 0 0% 100%;
+    --card-foreground: 221 39% 11%;
+
+    --popover: 0 0% 100%;
+    --popover-foreground: 221 39% 11%;
+
+    --primary: 24 85% 52%;
+    --primary-foreground: 0 0% 100%;
+    --primary-glow: 30 88% 61%;
+
+    --secondary: 199 89% 48%;
+    --secondary-foreground: 0 0% 100%;
+
+    --muted: 220 14% 96%;
+    --muted-foreground: 220 9% 46%;
+
+    --accent: 32 92% 95%;
+    --accent-foreground: 21 82% 40%;
+
+    --destructive: 0 72% 51%;
+    --destructive-foreground: 0 0% 100%;
+
+    --success: 142 71% 38%;
+    --success-foreground: 0 0% 100%;
+
+    --warning: 42 95% 50%;
+    --warning-foreground: 30 50% 15%;
+
+    --border: 220 13% 91%;
+    --input: 220 13% 91%;
+    --ring: 24 85% 52%;
+
+    --gradient-primary: linear-gradient(135deg, hsl(var(--primary)), hsl(var(--primary-glow)));
+    --shadow-soft: 0 1px 3px 0 hsl(221 39% 11% / 0.06), 0 1px 2px -1px hsl(221 39% 11% / 0.06);
+    --shadow-elevated: 0 14px 36px -18px hsl(221 39% 11% / 0.22);
+
+    --radius: 0.5rem;
+
+    --sidebar-background: 221 39% 11%;
+    --sidebar-foreground: 220 14% 96%;
+    --sidebar-primary: 24 85% 52%;
+    --sidebar-primary-foreground: 0 0% 100%;
+    --sidebar-accent: 217 33% 17%;
+    --sidebar-accent-foreground: 0 0% 100%;
+    --sidebar-border: 215 28% 24%;
+    --sidebar-ring: 24 85% 52%;
+  }
+
+  .dark {
+    --background: 221 39% 7%;
+    --foreground: 0 0% 98%;
+
+    --card: 221 39% 10%;
+    --card-foreground: 0 0% 98%;
+
+    --popover: 221 39% 10%;
+    --popover-foreground: 0 0% 98%;
+
+    --primary: 24 85% 52%;
+    --primary-foreground: 0 0% 100%;
+    --primary-glow: 30 88% 61%;
+
+    --secondary: 199 89% 48%;
+    --secondary-foreground: 0 0% 100%;
+
+    --muted: 217 33% 17%;
+    --muted-foreground: 215 20% 65%;
+
+    --accent: 24 60% 18%;
+    --accent-foreground: 0 0% 100%;
+
+    --destructive: 0 84% 60%;
+    --destructive-foreground: 0 0% 100%;
+    
+    --success: 142 71% 45%;
+    --success-foreground: 0 0% 100%;
+    
+    --warning: 42 95% 55%;
+    --warning-foreground: 0 0% 10%;
+
+    --border: 215 28% 24%;
+    --input: 215 28% 24%;
+    --ring: 24 85% 52%;
+    
+    --gradient-primary: linear-gradient(135deg, hsl(var(--primary)), hsl(var(--primary-glow)));
+    --shadow-soft: 0 1px 3px 0 hsl(0 0% 0% / 0.24);
+    --shadow-elevated: 0 14px 36px -18px hsl(0 0% 0% / 0.45);
+
+    --sidebar-background: 221 39% 7%;
+    --sidebar-foreground: 0 0% 100%;
+    --sidebar-primary: 24 85% 52%;
+    --sidebar-primary-foreground: 0 0% 100%;
+    --sidebar-accent: 217 33% 17%;
+    --sidebar-accent-foreground: 0 0% 100%;
+    --sidebar-border: 215 28% 24%;
+    --sidebar-ring: 24 85% 52%;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+
+  body {
+    @apply bg-background text-foreground transition-colors duration-500 ease-in-out;
+  }
+}

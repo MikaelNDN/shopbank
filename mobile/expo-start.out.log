@@ -1,0 +1,11 @@
+
+> shopbank@1.0.0 start
+> expo start --offline --port 8082
+
+env: load .env.development
+env: export EXPO_PUBLIC_API_URL EXPO_PUBLIC_USE_MOCK
+Networking has been disabled
+Starting project at C:\Users\Matheus\Documents\Accenture\Projeto Final\shopbank
+Starting Metro Bundler
+Waiting on http://localhost:8082
+Logs for your project will appear below.
